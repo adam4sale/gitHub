@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Employee</title>
+
+    <style>
+          body{
+         background: url(../images/stars_0.jpg);
+
+        }
+        nav{
+            padding: 10px;
+            border-left: 3px solid white;
+            border-bottom: 3px solid white;
+            justify-content: left;
+            width: 30%;
+            height: 175px;
+            background: #318CE7;
+            opacity: 0.7;
+
+
+        }
+        nav ul{
+            list-style-type: none;
+            font-weight: bold;
+            padding-right:
+        }
+
+         h1, h3{
+
+            color: #318CE7;
+         }
+
+         form{
+            color: white;
+         }
+    </style>
+</head>
+<body>
+<h1>Edit Employee</h1>
+<nav>
+    <a href="/home">return home</a>
+</nav>
+
+    <form id="change" method="POST" action="/changePassword">
+        <h3>Change User Password</h3>
+        <label for="password">New Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirm">Confirm Password</label><br>
+        <input type="password" id="confirm" name="confirm"><br><br>
+        <input type="submit" value="Change Password">
+    </form>
+
+
+</body>
+</html>

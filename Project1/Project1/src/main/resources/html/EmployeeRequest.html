@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Form</title>
+
+  <style>
+    #body{
+      width: 300px;
+      height: 100px;
+      border: 1px solid;
+      padding: 5px;
+    }
+  </style>
+
+  <script>
+     function postRequests() {
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200){
+                    var response = JSON.parse(this.responseText);
+                    console.log(response);
+                    //document.getElementById("requests").innerText = response;
+
+                      for(var req of response){
+                        var pending = document.createElement("P");
+                        var amount = document.createElement("P");//Create a paragraph
+                        var date = document.createElement("P");//date of the object
+                        var body = document.createElement("P");//body of the request
+
+                        pending.id = "pending";
+                        amount.id = "amount";
+                        date.id = "date";
+                        body.id = "body";
+                        date.innerText = new Date(req.date);
+                        amount.innerText = "Amount: " + req.amount;
+                        body.innerText = req.body;
+                        pending.innerText = "Status: " + req.approved;
+
+                        document.getElementById("requests").appendChild(date);
+                        document.getElementById("requests").appendChild(pending);
+                        document.getElementById("requests").appendChild(amount);
+                        document.getElementById("requests").appendChild(body);
+                    }
+                }
+            };
+            request.open("POST", "/Request", true);
+            request.send();
+        }
+        postRequests();
+  </script>
+
+
+  <style>
+    #date{
+      padding-top: 50px;
+    }
+    #body{
+      padding-bottom: 10px;
+    }
+
+         body{
+         background: url(../images/stars_0.jpg);
+        }
+        nav{
+            padding: 10px;
+            border-left: 3px solid white;
+            border-bottom: 3px solid white;
+            justify-content: left;
+            width: 30%;
+            height: 175px;
+            background: #318CE7;
+            opacity: 0.7;
+
+
+        }
+        nav ul{
+            list-style-type: none;
+            font-weight: bold;
+            padding-right:
+        }
+
+         h1, h3{
+
+            color: #318CE7;
+         }
+
+
+           #request{
+            opacity: 70%;
+            border-left: 3px solid white;
+
+         }
+
+         #requests{
+            opacity: 70%;
+            border-left: 3px solid white;
+            background: #318CE7;
+            width: 40%;
+            color: white;
+         }
+
+         form{
+          z-index: 2;
+          color: white;
+          background: #318CE7;
+          width: 40%;
+          padding-left: 10px;
+          padding-bottom: 10px;
+         }
+
+
+         h3{
+           color: white;
+           padding-left: 10px;
+         }
+        p{
+          padding-left: 10px;
+        }
+
+  </style>
+</head>
+<body>
+<h1>Employee Request Form </h1>
+<nav>
+  <a href="/home">return home</a>
+</nav>
+
+
+<div id = "request">
+  <form id = requestForm method="POST" action="/SubmitRequest">
+    <h3>Fill in all Fields</h3>
+    <label for="amount">Enter Amount</label><br>
+    <input type="text" id="amount" name="amount"><br><br>
+    <label for="body">Enter Description</label><br>
+    <textarea type="text" id="body" name="body" maxlength="1000"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div id="requests">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+2021-05-18 14:20:53,672 INFO UserServiceTest [Test worker] list at position 0
+2021-05-18 14:20:53,711 INFO UserServiceTest [Test worker] true is the value of the boolean flag in the UserServiceTest
+2021-05-18 14:20:53,723 INFO c.e.d.MongoDao [Test worker] You got a list
+2021-05-18 14:20:53,734 INFO LogInServiceTest [Test worker] Riker1
+2021-05-18 14:20:53,735 INFO LogInServiceTest [Test worker] The test didn't to the if statement but to the else...
+2021-05-18 14:20:53,735 INFO LogInServiceTest [Test worker] Picard1
+2021-05-18 14:20:53,735 INFO LogInServiceTest [Test worker] The test didn't to the if statement but to the else...
+2021-05-18 14:20:53,735 INFO LogInServiceTest [Test worker] LaForge3
+2021-05-18 14:20:53,735 INFO LogInServiceTest [Test worker] The test didn't to the if statement but to the else...
+2021-05-18 14:20:53,736 INFO LogInServiceTest [Test worker] Worf9
+2021-05-18 14:20:53,736 INFO LogInServiceTest [Test worker] The password was found!
+2021-05-18 14:20:53,747 INFO LogInServiceTest [Test worker] list at position 0
+2021-05-18 14:20:53,755 INFO LogInServiceTest [Test worker] true is the value of the boolean flag in the LogInServiceTest
+2021-05-18 14:20:53,794 INFO c.e.d.MongoDao [Test worker] A request was posted by Worf
+2021-05-18 14:20:53,798 INFO c.e.d.MongoDao [Test worker] You got a list
+2021-05-18 14:20:53,823 INFO c.e.d.MongoDao [Test worker] You got a list
+2021-05-18 14:20:53,825 INFO c.e.d.MongoDao [Test worker] You got a list
+2021-05-18 14:20:53,849 INFO c.e.d.MongoDao [Test worker] You got a list

@@ -1,0 +1,27 @@
+
+        body{
+         background: url(../images/stars_0.jpg);
+
+        }
+        nav{
+            padding: 10px;
+            border-left: 3px solid white;
+            border-bottom: 3px solid white;
+            justify-content: left;
+            width: 30%;
+            height: 175px;
+            background: #318CE7;
+            opacity: 0.7;
+
+
+        }
+        nav ul{
+            list-style-type: none;
+            font-weight: bold;
+            padding-right:
+        }
+
+         h1, h3{
+
+            color: #318CE7;
+         }
