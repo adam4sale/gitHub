@@ -29,7 +29,7 @@ To get this application setup:
 1. Must have Java 8 runtime environment installed.
 
 If the requirements are met, go ahead and clone the repo by using the command below:
-```https://github.com/Project-Adam-Johnson-David/Project2```
+```https://github.com/```
 
 Once the repository is cloned you will need to make sure the localhost:8080 and mongodb is running.
 The backend is running at port 8080.
