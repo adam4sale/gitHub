@@ -1,10 +1,10 @@
-# 
+# Expense Reimbursement System (ERSPP)
 
 ## Overview
-- BidderUp is an international consumer-to-consumer online bidding marketplace. 
-Consumers across the world can connect through the web application to place bids on other users’ items. 
-Users can browse for items, make offers on other users’ items, and review the previous bids they have made; 
-likewise, users can also review bids made on their items by other users. This platform caters to users who want to acquire goods both locally and abroad.
+- The Expense Reimbursement System (ERS) will manage the process of reimbursing employees for expenses incurred while 
+on company time. All employees in the company can login and submit requests for reimbursement and view their past tickets 
+and pending requests. Finance managers can log in and view all reimbursement requests and past history for all employees in 
+the company. Finance managers are authorized to approve and deny requests for expense reimbursement.
 
 ## Tools and Technologies
 - Javalin
@@ -16,19 +16,17 @@ likewise, users can also review bids made on their items by other users. This pl
 
 ## Features
 - Users can login
-- Users can signup using their email and their country
-- Users can browse for items that are placed for sale
-- Users can bid for items that are placed for sale
-- Users can place an item for sale
-- Users can review all offers on all items placed for sale
-- Users can update their information
-- Users can see prices reflected to their respective currency 
+- Managers and Employees are distinguished by an arbitrary rank
+- Employees can post reimbursment requests and view their old requests
+- Managers can view all reimbursment requests from all employees
+- Managers can accept or deny requests
+- Employees can check to see if their requests were approved by a manager
+- Employees can update their passwords 
 
 ## Getting Started
 
 To get this application setup:
-1. Must have nodejs install.
-2. Must have Java 8 runtime environment installed.
+1. Must have Java 8 runtime environment installed.
 
 If the requirements are met, go ahead and clone the repo by using the command below:
 ```https://github.com/Project-Adam-Johnson-David/Project2```
